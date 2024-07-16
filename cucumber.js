@@ -1,7 +1,8 @@
 let options = [
     '--require-module ts-node/register',
     '--require ./steps/*.steps.ts',
-    '--format progress',
+    'cucumber-js -f @cucumber/pretty-formatter',
+    '--publish'
 ].join(' ');
 
 let run_features = [
