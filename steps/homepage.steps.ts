@@ -8,7 +8,8 @@ const { Given, When, Then, And } = require('@cucumber/cucumber');
 Given('User navigates to home page', async function () {
     await expect(page.getByRole('link', { name: 'Strypes logo' })).toBeVisible();
     const acceptButton = page.getByRole('button', { name: 'Accept All' });
-    await acceptButton.click();  
+    await acceptButton.click();
+    await page.frameLocator('[data-test-id="chat-widget-iframe"]').locator('[data-test-id="initial-message-close-button"]').click();
 });
 
 Given('User sees {string} navigation menu item', async function (menuItemName: string) {
