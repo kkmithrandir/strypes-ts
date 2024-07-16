@@ -16,10 +16,10 @@ Gherkin Indent
 Open the project using <preferably> VS code
 Install "Playwright Test for VSCode" extension
 Install "Cucumber for VSCode" extension
-
+in the console run: npm install
 
 ====RUNNING & REPORTING====
-Run the tests/features by adding @testing tag and then run 'npm test'in the terminal
+Run the tests/features by adding @testing tag and then run 'npm test' in the terminal
 Test reports are automatically generated inside 'target' folder
 after the test has been finished
 Externally a report is generated and shared on https://reports.cucumber.io
